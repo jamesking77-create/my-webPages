@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon", type="image/png" sizes="favicon-16x16" href="../asset/favicon-16x16.png">
+    <title>landing page</title>
+    <style>
+
+        .mainContainer{
+
+            border: solid rgb(126, 2, 250);
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 130vh;
+        }
+    
+        .topNav{
+            display: flex;
+            width: 100%;
+            height: 5%;
+            padding: 1% 2%;
+        }
+      
+        .ptag{
+            width: 10%;
+            text-align: start;
+        }
+
+        .logo{
+            /* border: solid rebeccapurple; */
+            color: rgb(7, 4, 0);
+            text-shadow: 1px 1px 2px black; 
+            font-size: 16px;
+            font-weight: 700;
+            margin-right: 20%;
+            margin-top: 0%;
+           
+        }
+
+        .topNav nav {
+            /* border: solid rebeccapurple; */
+            display: flex;
+            width: 80%;
+            height: 100%;
+            justify-content: end;
+          
+        }
+
+        .topNav nav li{
+           
+            list-style: none;
+            padding: 0% 2%S;  
+            align-content: center;
+            margin-left: 1%;      
+        }
+
+        .topNav nav li a{
+            /* border: solid rebeccapurple; */
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700px;
+            color: black; 
+            align-self: center;
+            
+        }
+
+
+        .getDemo{
+            border: solid rgb(0, 109, 252);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700px;
+            color: rgb(0, 109, 252); 
+            margin-left: 20px;
+            padding: 0% 1%;
+            border-radius: 20%;
+            
+        }
+
+       
+        .logintext{
+           
+
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700%;
+            margin-top: 3%;
+            text-align: center;
+            font: size 12px;
+        }
+
+        .login{
+            margin-top: 0.5%;
+            display: flex;
+            gap: 3%;
+            margin-left: 1%;
+        }
+
+
+
+        .box1{
+            display: flex;
+            height: 30%;
+            background-color: rgb(0, 140, 255);
+            align-content:center;
+            clip-path: polygon(0 0, 100% 0, 100.00% 86.00%, 0);
+           
+        }
+
+        .innerbox1{
+            height: 70%;
+            width: 40%;
+            background-color: rgb(0, 140, 255);
+            text-align: center;
+            margin-left: 6%;
+            margin-top: 3%;
+            margin-right: 3%;
+            color: white;
+
+        }
+
+        .box2{
+          
+             background-color: rgb(208, 245, 232);
+             height: 30%;
+             text-align: center;
+             padding-top: 5%;             
+        }
+
+        .box3{
+            border: solid 2pt red;
+            background-color: rgb(255, 255, 255);
+            height: 150%; 
+            align-content: center;
+
+        }
+
+         .box4{
+            background-color: rgb(3, 3, 3);
+            height: 30%; 
+        }
+
+
+        .register{
+            background-color: black;
+            align-self: center;
+            width: 25%;
+            height: 20%;
+            margin-left: 35%;
+        }
+        .reg{
+            color: white;
+        }
+
+        .hero{
+           width: 25%;
+           height: 75%;
+           float: left;
+           margin-top: 12%; 
+        }
+
+        .hero2 {
+           width: 25%;
+           height: 75%;
+           float: left;
+           margin-top: 6%; 
+        }
+
+        .secpic{
+            margin-top: 4%;
+            width: 50%;
+            height: 50%;
+        }
+
+        .thirdpic{
+            align-self: center;
+            width: 45%;
+           height: 80%;
+           margin-left: 30%;
+           margin-top: 5%;
+        }
+        
+
+       
+
+     
+     </style>
+   
+</head>
+<body>
+    <div class="mainContainer">
+        
+        <div class="topNav">
+            
+            <div class="ptag">
+                <p class="logo">Regnosite</p>
+            </div>
+              
+                <nav>
+                    <li> 
+                        <a href="https://google.com" class="name1">Feature</a>
+                    </li>
+                    <li>
+
+                    <a href="https://semicolon.com" class="name2">Integration</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com" class="name3">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="https://jw.org" class="name4">Comapny</a>
+                    </li>
+                    <li>
+                        <a href="https://www.freecodecamp.com" class="name5">Blog</a>
+                    </li>
+
+                    <div class="getDemo">
+                         <p id="demo", style="margin-top: 7%;">get a demo</p>
+                    </div>
+
+                    <div class="login">
+                        <li> <img src=../asset/login.svg alt="fav", style="float: left; margin-top: 0%;"></li>
+                        <li><p class="logintext", style="margin-top: 0%;">login</p></li>
+                    </div>
+                </nav>     
+         </div>   
+         
+        <div class="box1">
+            <img src="../asset/hero.svg" alt="" class="hero">
+
+            <div class="innerbox1", style="font-size: large;"> 
+                <p>Find The Right Partners <br>
+                    To Fuel Your Business Growth <br>
+                    <span style="font-size: x-small;">join a vibrant community of MSPs to forge long-lasting relationship with partners <br>
+                        that help create excellent customer experience
+                    </span> 
+                    <div class="register">
+                        <p class=" reg">Register</p>
+                    </div>
+                </p>
+        </div>
+            <img src="../asset/2hero.svg" alt="" class="hero2">
+        </div>
+
+        <div class="box2">
+                <div class="lsg" >
+                    <b class="lsg-text">List. Sell. Grow </b>
+                </div>
+
+                <div class="secpics">
+                    <img src="../asset/pic2.svg" alt="" class="secpic">
+                </div>
+        </div>
+
+        <div class="box3">
+            <div class="thirdpics">
+                <img src="../asset/thirdpic.svg" alt="", class="thirdpic">
+        </div>
+
+        </div>
+
+        <div class="box4">
+
+        </div>
+        
+    </div>
+
+  
+</body>
+</html

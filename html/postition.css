@@ -1,0 +1,363 @@
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+   
+.MainContainer{
+  /* border: 5pt solid red; */
+  height: 100%;
+}
+
+
+
+
+.sections{
+    margin-top: auto;
+      background: url(../html/images/zany-jadraque-YLdC7qO9M3g-unsplash.jpg);  
+      background-size: 80% ;
+      width: 100%;
+      background-repeat: repeat-x ;
+      background-color: black;
+      
+  }
+
+
+  .kingdiv{
+    display: flex;
+    list-style: none;
+  }
+
+  .ct{
+    color: white;
+    font-size: 500%;
+    text-align: center;
+    
+  }
+
+.topnav{
+    height: 8%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.938);
+    display: flex;
+    gap: 20em;
+    /* padding-top: 1%;
+    padding-bottom: 1%; */
+    align-items: center;
+}
+
+.topnav li{
+    
+    list-style: none;
+    color: aliceblue;
+    font-size: 90%;
+    width: 11%;
+    justify-content: center;  
+   
+  
+}
+
+.topnav li:hover {
+    background-color: #000000b9;
+    color: white;
+    transform: scale(1.2);
+    
+  }
+
+
+
+.subcribe{
+    
+    width: 24%;
+    height: 90%;
+    align-content: center;
+    text-align: center;
+}
+
+.subcribe p{
+    border: 2pt solid white;
+    margin-top: auto;
+    color: white;
+    
+}
+
+.subcribe p:hover {
+    background-color: #00ff08b9;
+    color: white;
+    transform: scale(1.2);
+    
+  }
+
+
+
+.topnav .nav1{
+
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    gap: 5%;
+    padding: 1%;
+    margin-right: 5%;
+    list-style: none;
+}
+
+
+
+.header{
+    border: solid 4pt white;
+    top: 40%;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.63),rgba(2, 5, 19, 0.712)),url(../html/images/Razer\ Black\ Shark\ -\ benny\ Productions.jpg);
+    background-position: center;
+    background-color: linear-gradient(rgba(4, 9, 30, 0.418),rgba(4, 9, 30, 0.178));
+    background-size: cover;
+    position: sticky;
+    
+}
+
+.titlenav{
+    width: 10%;
+    justify-content: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 3%;
+}
+
+
+.box1{
+ 
+    top:30% ;
+     background-image: linear-gradient(rgba(28, 75, 28, 0.288),rgba(5, 151, 5, 0.315), rgba(3, 46, 3, 0.116));
+     min-height: 60vh;
+     width: 100%;
+     position: static;
+     display: flex;
+    
+ 
+ }
+
+
+/* 
+ .box2{
+    margin-top: auto;
+    top: 45%;
+     background-color:grey;
+     height: 100%;
+     width: 1vw;
+    margin-left: 55%;
+    position: fixed;
+ 
+ } */
+
+ .box3{
+  
+     top: 35%;
+     background-color: rgba(0, 0, 0, 0.527);
+     min-height: 60vh;
+     width: 100%;
+     position: sticky;
+     align-content: center;
+     padding-top: 20%;
+     
+    
+ }
+
+ .box4{
+     background-color: rgb(0, 0, 0);
+     height: 60vh;
+     width: 98.96%;
+     position:absolute;
+     align-content: center;
+     /* margin-right: 34%; */
+ }
+
+ .b3inner {
+    background-color: rgba(16, 199, 9, 0.418);
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    height: 25vh;
+    width: 25vw;
+    border-radius: 10%;
+    margin-left:33%;
+    
+
+  }
+
+ .b3inner:hover {
+    background-color: #00ff08a2;
+    color: white;
+    transform: scale(1.2);
+    
+  }
+
+  .b3inner{
+    border-radius: 16px;  
+    width: 30vw;
+    height: 20vh;
+    /* animation: trans infinite 2s; */
+    animation-name: trans;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes trans {
+  75%{
+    background-color: rgba(68, 255, 0, 0.473);
+    left: 0%;
+    top: 70%; 
+}
+
+}
+
+ .b3text{
+    color: white;
+    margin-top: 10%;
+    
+ }
+
+ .viewspan{
+    font-size: small;
+    font-stretch: wider;
+ }
+
+ .sectext{
+    position: sticky;
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+ }
+
+ .quote{
+    font-size: small;
+    
+ }
+
+
+.footer1{
+    display: flex;
+    gap: 5%;
+    align-content: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 23%;
+    
+}
+
+
+.f1 {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    height: 13vh;
+    width: 6vw;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px rgba(27, 31, 32, 0.671);
+    align-content: center;
+
+  }
+
+  .f1:hover {
+    background-color: #00ff08;
+    color: white;
+    transform: scale(1.2);
+  }
+
+
+  .f2 {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    height: 13vh;
+    width: 6vw;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px rgba(27, 31, 32, 0.671);
+
+  }
+
+  .f2:hover {
+    background-color: #00ff08;
+    color: white;
+    transform: scale(1.2);
+  }
+
+  .f3 {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    height: 13vh;
+    width: 6vw;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px rgba(27, 31, 32, 0.671);
+
+  }
+
+  .f3:hover {
+    background-color: #00ff08;
+    color: white;
+    transform: scale(1.2);
+  }
+
+  .f4 {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    height: 13vh;
+    width: 6vw;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px rgba(27, 31, 32, 0.671);
+
+  }
+
+  .f4:hover {
+    background-color: #00ff08;
+    color: white;
+    transform: scale(1.2);
+  }
+
+  .projectpng{
+    width: 85%;
+    height: 80%;
+    color: #00ff08;
+    
+  }
+
+  .footer2{
+
+    align-content: center;
+    text-align: center;
+    width: 70%;
+    margin-top: 3%;
+    margin-left: 15%;
+}
+
+.f5{
+  color: white;
+}
+
+

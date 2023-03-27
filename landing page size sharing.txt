@@ -1,0 +1,11 @@
+parent = 100%
+
+child 1 = 5%.
+
+child 2 = 15%
+
+child 3 = 15%
+
+child 4 = 50%
+
+child 5 = 15%

@@ -1,0 +1,28 @@
+LU->>more on this
+
+-SELECTOR  ->> .data= selector{font = properties: 10px = value }
+
+-lu ->> html property
+
+->> span tag == use to seperate ptag/text value to give it a different style, but retaining the width of the style that it is in.
+
+->> p tag and h1 tag by default takes the whole parent width, so trying to put the side
+by side without reducing the width, it will automatically drop to the next line.
+
+->> univsersal selector (*)
+- SPECIFIER
+- BOX MODEL
+- POSITION
+- PSEUDO
+- FLEX BOX
+- GRID
+
+-> position sticky property make the div not move when you scroll the page like benny's page.
+-> use position absolut when you want one thing to be on another thing.
+-> use position relative to put object amist other things like image amist text;
+
+-> when you want to do animations always use @keyframe followed by the property(animation name)
+
+TRY-OUT -> display flex, display grid, flexbox.
+
+ 
