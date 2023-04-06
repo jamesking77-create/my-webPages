@@ -1,0 +1,259 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --link-color: white;
+    --main-color: orangered;
+}
+
+.mainBox{
+    /* border: solid 2pt red; */
+    height: 150rem auto;
+  
+}
+
+
+.topNav{
+ 
+    height: 5rem;
+    background-color: rgb(76, 134, 76);
+    align-content: center;
+    display:flex;
+    grid-template-columns: 1fr 1fr;
+}
+
+.vector{
+    /* border: solid 2pt red; */
+    width: 1.5rem;
+    height: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem; 
+    display: grid;
+}
+
+.flori{
+    /* border: solid 2pt red; */
+    width: 7rem;
+    height: 4rem;
+    margin-top: 0.4rem;
+    display: grid;
+}
+
+.searchVector{
+    /* border: solid 2pt red; */
+    width: 1.8rem;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-left: 60rem; 
+    display: grid;
+
+}
+
+.threeDotVector{
+    /* border: solid 2pt red; */
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1.4rem;
+    margin-left: 2rem;
+    display: grid;
+}
+
+
+.centerBox{
+     /* border: solid 2pt red;  */
+    height: 100rem;
+}
+
+.center1{
+
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-content: center;
+}
+
+.discover{
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 39px;
+margin-right: 15rem;
+color:rgb(76, 134, 76); 
+}
+
+.toggle{
+  
+    margin-left: 30rem;
+    height: 3rem;
+    width: 3rem;
+
+}
+
+
+
+.center2{
+  
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-content: center;
+}
+
+
+
+.pic1{
+    width: 25rem;
+    height: 45rem;
+    margin-left: 15rem;
+    margin-top: 5rem;
+   
+    }
+
+
+    .center3{
+      
+        height: 30rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        align-content: center;
+    }
+
+    .floriPic1{
+      
+        width: 15rem;
+        height: 25rem;
+        margin-left: 10rem;
+
+    }
+
+    .floriPic1:hover {
+       
+        transform: scale(1.2);
+        animation-duration: 2s;
+      }
+    
+
+    .floriPic2{
+         
+        width: 15rem;
+        height: 25rem;
+        margin-left: 10rem;
+        animation: trans
+         duration timing-function delay iteration-count direction fill-mode;
+
+    }
+
+    .floriPic2:hover {
+       
+        transform: scale(1.2);
+        animation-duration: 2s;
+      }
+     
+
+    .center4{
+       
+        height: 30rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        align-content: center;
+    }
+
+  
+    .floriPic3{
+       
+        width: 15rem;
+        height: 25rem;
+        margin-left: 10rem;
+
+    }
+
+    .floriPic3:hover {
+       transform: scale(1.2);
+        animation-duration: 2s;
+      }
+    
+
+      .floriPic4{
+    
+        width: 15rem;
+        height: 25rem;
+        margin-left: 10rem;
+        animation: trans
+        
+
+    }
+
+    .floriPic4:hover {
+        transform: scale(1.2);
+        animation-duration: 2s;
+  }
+
+      .footer{
+        align-content: center;
+        background-color:rgb(76, 134, 76); 
+        height: 10rem;
+        display: grid;
+       
+      }
+
+      .footers{
+        margin-top: 2rem;
+        align-content: center;
+        display: flex;
+      }
+
+      .home{
+        width: 7rem;
+        height: 7rem;
+        margin-left: 8rem;
+      }
+
+      .heart{
+        width: 7rem;
+        height: 7rem;
+        margin-left: 10rem;
+      }
+
+      .cart{
+        width: 6rem;
+        height: 6rem;
+        margin-left: 12rem;
+        margin-top: 0.5rem;
+      }
+
+      .person{
+        margin-top: 0.5rem;
+        width: 6rem;
+        height: 6rem;
+        margin-left: 15rem;
+      }
+
+      @media (max-width: 700px) {
+        .centerBox {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    @media (max-width: 470px) {
+        .centerBox{
+            width: 12rem;
+            max-height: 12rem;
+            object-fit: cover;
+            max-width: 100%;
+        }
+    }

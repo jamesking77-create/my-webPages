@@ -1,7 +1,12 @@
-<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <html lang="en">
 <head>
     <link rel="icon", type="image/png" sizes="favicon-16x16" href="../asset/favicon-16x16.png">
+
     <title>landing page</title>
     <style>
 
@@ -11,6 +16,10 @@
             background-color: rgb(255, 255, 255);
             width: 100%;
             height: 130vh;
+        }
+
+        .topNav-grid{
+            display: grid;
         }
     
         .topNav{
@@ -35,6 +44,12 @@
             margin-top: 0%;
            
         }
+
+
+    :root {
+    --link-color: white;
+    --main-color: orangered;
+    }
 
         .topNav nav {
             /* border: solid rebeccapurple; */
@@ -96,10 +111,15 @@
         }
 
 
+        .box1-grid{
+            display: grid;
+            
+        }
+
 
         .box1{
             display: flex;
-            height: 30%;
+            height: 20rem;
             background-color: rgb(0, 140, 255);
             align-content:center;
             clip-path: polygon(0 0, 100% 0, 100.00% 86.00%, 0);
@@ -123,20 +143,28 @@
              background-color: rgb(208, 245, 232);
              height: 30%;
              text-align: center;
-             padding-top: 5%;             
+             padding-top: 5%;       
+                  
         }
+       
 
         .box3{
-            border: solid 2pt red;
+          
             background-color: rgb(255, 255, 255);
-            height: 150%; 
+            height: 180%; 
             align-content: center;
 
         }
 
+        .box4-grid{
+            display: grid;
+        }
+
          .box4{
             background-color: rgb(3, 3, 3);
-            height: 30%; 
+            height: 30rem; 
+            align-content: center;
+            text-align: center;
         }
 
 
@@ -167,17 +195,56 @@
 
         .secpic{
             margin-top: 4%;
-            width: 50%;
-            height: 50%;
+            width: 70%;
+            height: 70%;
         }
 
         .thirdpic{
             align-self: center;
-            width: 45%;
-           height: 80%;
-           margin-left: 30%;
+            width: 40rem;
+           height: 80rem;
            margin-top: 5%;
         }
+
+        .box2Inner{
+            display: flex;
+        }
+
+        .tri{
+            margin-left: 5%;
+            margin-bottom: 3%;
+            height: 10%;
+            width: 10% ;
+        }
+       
+        .foot{
+            margin-top: 3%;
+            width: 70%;
+            height: 70%;
+            align-self: center;
+            
+        }
+
+
+        @media (max-width: 700px) {
+    .topNav-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .box4-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 470px) {
+            .box3 {
+        width: 12rem;
+        max-height: 12rem;
+        object-fit: cover;
+        max-width: 100%;
+    }
+}
         
 
        
@@ -188,69 +255,90 @@
 </head>
 <body>
     <div class="mainContainer">
-        
-        <div class="topNav">
+        <div class="topNav-grid">
+
+
+            <div class="topNav">
             
-            <div class="ptag">
-                <p class="logo">Regnosite</p>
-            </div>
-              
-                <nav>
-                    <li> 
-                        <a href="https://google.com" class="name1">Feature</a>
-                    </li>
-                    <li>
+                <div class="ptag">
+                    <p class="logo">Regnosite</p>
+                </div>
+                  
+                    <nav>
+                        <li> 
+                            <a href="https://google.com" class="name1">Feature</a>
+                        </li>
+                        <li>
+    
+                        <a href="https://semicolon.com" class="name2">Integration</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com" class="name3">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="https://jw.org" class="name4">Comapny</a>
+                        </li>
+                        <li>
+                            <a href="https://www.freecodecamp.com" class="name5">Blog</a>
+                        </li>
+    
+                        <div class="getDemo">
+                             <p id="demo", style="margin-top: 7%;">get a demo</p>
+                        </div>
+    
+                        <div class="login">
+                            <li> <img src=../asset/login.svg alt="fav", style="float: left; margin-top: 0%;"></li>
+                            <li><p class="logintext", style="margin-top: 0%;">login</p></li>
+                        </div>
+                    </nav>     
+             </div>   
 
-                    <a href="https://semicolon.com" class="name2">Integration</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com" class="name3">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="https://jw.org" class="name4">Comapny</a>
-                    </li>
-                    <li>
-                        <a href="https://www.freecodecamp.com" class="name5">Blog</a>
-                    </li>
-
-                    <div class="getDemo">
-                         <p id="demo", style="margin-top: 7%;">get a demo</p>
-                    </div>
-
-                    <div class="login">
-                        <li> <img src=../asset/login.svg alt="fav", style="float: left; margin-top: 0%;"></li>
-                        <li><p class="logintext", style="margin-top: 0%;">login</p></li>
-                    </div>
-                </nav>     
-         </div>   
-         
-        <div class="box1">
-            <img src="../asset/hero.svg" alt="" class="hero">
-
-            <div class="innerbox1", style="font-size: large;"> 
-                <p>Find The Right Partners <br>
-                    To Fuel Your Business Growth <br>
-                    <span style="font-size: x-small;">join a vibrant community of MSPs to forge long-lasting relationship with partners <br>
-                        that help create excellent customer experience
-                    </span> 
-                    <div class="register">
-                        <p class=" reg">Register</p>
-                    </div>
-                </p>
         </div>
+        
+       
+         
+        <div class="box1-grid">
+            <div class="box1">
+                <img src="../asset/hero.svg" alt="" class="hero">
+    
+                <div class="innerbox1", style="font-size: large;"> 
+                    <p>Find The Right Partners <br>
+                        To Fuel Your Business Growth <br>
+                        <span style="font-size: x-small;">join a vibrant community of MSPs to forge long-lasting relationship with partners <br>
+                            that help create excellent customer experience
+                        </span> 
+                        <div class="register">
+                            <p class=" reg">Register</p>
+                        </div>
+                    </p>
+            </div>
             <img src="../asset/2hero.svg" alt="" class="hero2">
         </div>
+        </div>
 
-        <div class="box2">
+       
+        
+        <div class="box2-grid">
+            <div class="box2">
                 <div class="lsg" >
                     <b class="lsg-text">List. Sell. Grow </b>
                 </div>
+                
+                <div class="box2Inner">
+                    <img src="../asset/tri.svg" alt="", class="tri">
 
-                <div class="secpics">
-                    <img src="../asset/pic2.svg" alt="" class="secpic">
+                    <div class="secpics">    
+                        <img src="../asset/pic2.svg" alt="" class="secpic">
+                    </div>
+
+                    <img src="../asset/tri.svg" alt="", class="tri">
                 </div>
+               
         </div>
+    </div>
 
+
+       <div class="box3-grid">
         <div class="box3">
             <div class="thirdpics">
                 <img src="../asset/thirdpic.svg" alt="", class="thirdpic">
@@ -258,11 +346,17 @@
 
         </div>
 
-        <div class="box4">
+       </div>
 
+       <div class="box4-grid">
+        <div class="box4">
+            <img src="../asset/foot.svg" alt="" class="foot">
         </div>
         
-    </div>
+        </div>
+
+       </div>
+        
 
   
 </body>
