@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./guessingGame.css">
-    <script src="guessingGame.js"></script>
     <title>Document</title>
     
 </head>
@@ -13,28 +12,37 @@
     <div class="mainContainer">
 
         <div class="box1">
-            <p class="g-game">Guessing Game</p>
+            <p class="g-game">
+                
+                    Guess a number from (0 - 100)
+                </span>
+                
+            </p>
 
             <div class="box1inner1">
-                <input type="number" class="input">
+            
+                <input type="number" class="input" id="input" min="0" max="100">
+            
+                </input>
                 
-                <div class="guess"> 
-                    <p class="gs"> Guess </p>
-                </div>
+                <input class="guess" id="guess"  type="submit" value="Guess"> 
+                 
+            </input>
 
             </div>
 
             <div class="box1inner2">
-                <output name="output" class="outputs"></output>
+             <p id="outputs" class="output"> ggg</p>
+              
             </div>
 
             <div class="box1inner3">
 
-                <div class="play"> 
-                    <p class="pl"> Play Game </p>
-            </div>
+                <button class="play", id="play" onclick="guesssingGame()"> 
+                    <p class="pl" id="pl"> Play Game </p>
+                </button>
 
-                <div class="exit"> 
+                <div class="exit" id="exit"> 
                     <p class="ex"> Exit Game </p>
                 </div>
             </div>
@@ -42,5 +50,30 @@
         </div>
 
     </div>
+
+
+    <script>
+       
+    
+        function guessingGame (){ 
+
+              let random = Math.floor((Math.random() * 100) + 1);
+      
+              document.getElementById("outputs").innerHTML("please enter a number: ")
+      
+              let input = document.getElementById("input");
+      
+              let guess = document.getElementById("")
+              if(input == random){
+                  document.getElementById("output").innerHTML = "congratulation you win!!!, the lucky number is "+ random;  
+              }
+          
+              document.getElementById("output").innerHTML =(`try again, the lucky number is ${random}`);
+          
+          }
+      
+      
+          </script>
+      
 </body>
 </html>
