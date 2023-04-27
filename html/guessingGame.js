@@ -1,34 +1,58 @@
+
+let random;
+let guessButton = document.querySelector(".guess");
+let playbutton = document.querySelector(".play");
+
+
+let generateRandom = () =>{
+   playbutton.disabled = true;
+   guessButton.addEventListener("click", checkWinning);
+   random = Math.floor((Math.random() * 100) + 1);
+  document.querySelector(".display-game").innerHTML = " Guess a number from ( 0 - 100 )"
+}
+
+playbutton.addEventListener("click", generateRandom);
+
+let clearInput = () => {
+return input =  document.querySelector(".input").value = " ";
+}
  
+let enablePlayButton = () => {
+ return playbutton.disabled = false;
+}
 
 
 
-// var play = document.getElementById("play").click;
+ let checkWinning = () => { 
 
+  let input = document.querySelector(".input").value;
+        clearInput();
 
-
-// let input = Number(prompt("please enter a number: "))
- 
-//  let guessingGame = function (input){ 
-//         let random = Math.floor((Math.random() * 100) + 1);
-       
-//         if(input == random){
-//             alert(`congratulation you win!!!, the lucky number is  ${random}`);  
-//         }
+        if(input == random){
+          guessButton.disabled = false;
+          document.querySelector(".output").innerHTML = `congratulation you win!!!, the lucky number is  ${random}`;  
+        }
     
-//         alert(`try again, the lucky number is ${random}`);
-//     }
+        if(input != random){
+          guessButton.disabled = false;
+          document.querySelector(".output").innerHTML = `try again, the lucky number is ${random}`;
+          generateRandom()
+        }
+        else{
+        guessButton.disabled = true;
+        document.querySelector(".display-game").innerHTML = "Wrong input please enter a number:";
+      }
+        
+    }
 
+    
    
-//      let count = 0;
+    input.addEventListener("click", clearInput);
 
-    
-//     do{
-//       input(guessingGame(input))
-//       count++;
-//       if(count == 5){
-//         alert("game over!!!")
-//         break;
-//       }
-//     }while(count < 5)
-  
+
+   let exitButton = document.querySelector(".exit");
+
+   exitButton.addEventListener("click", enablePlayButton );
+
  
+  

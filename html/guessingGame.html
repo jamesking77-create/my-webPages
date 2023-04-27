@@ -12,39 +12,36 @@
     <div class="mainContainer">
 
         <div class="box1">
-            <p class="g-game">
-                
-                    Guess a number from (0 - 100)
-                </span>
-                
+            <p class="display-game">
+                Press The Play Button  
             </p>
 
             <div class="box1inner1">
             
-                <input type="number" class="input" id="input" min="0" max="100">
+                <input type="text" class="input" id="input" min="0" max="100" value="Enter a number">
             
                 </input>
                 
-                <input class="guess" id="guess"  type="submit" value="Guess"> 
-                 
-            </input>
+                <button class="guess" id="guess"  type="submit" value="Guess"> 
+                    Guess
+                </button>
 
             </div>
 
             <div class="box1inner2">
-             <p id="outputs" class="output"> ggg</p>
+             <p id="outputs" class="output">Result</p>
               
             </div>
 
             <div class="box1inner3">
 
-                <button class="play", id="play" onclick="guesssingGame()"> 
+                <button class="play", id="play" > 
                     <p class="pl" id="pl"> Play Game </p>
                 </button>
 
-                <div class="exit" id="exit"> 
+                <button class="exit" id="exit"> 
                     <p class="ex"> Exit Game </p>
-                </div>
+                </button>
             </div>
 
         </div>
@@ -52,28 +49,7 @@
     </div>
 
 
-    <script>
-       
-    
-        function guessingGame (){ 
-
-              let random = Math.floor((Math.random() * 100) + 1);
-      
-              document.getElementById("outputs").innerHTML("please enter a number: ")
-      
-              let input = document.getElementById("input");
-      
-              let guess = document.getElementById("")
-              if(input == random){
-                  document.getElementById("output").innerHTML = "congratulation you win!!!, the lucky number is "+ random;  
-              }
-          
-              document.getElementById("output").innerHTML =(`try again, the lucky number is ${random}`);
-          
-          }
-      
-      
-          </script>
+    <script src="./guessingGame.js"></script>
       
 </body>
 </html>

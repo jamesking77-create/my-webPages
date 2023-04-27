@@ -86,6 +86,7 @@
     color: white;
     transform: scale(1.2);
     
+    
   }
 
 
@@ -112,8 +113,7 @@
     background-position: center;
     background-color: linear-gradient(rgba(4, 9, 30, 0.418),rgba(4, 9, 30, 0.178));
     background-size: cover;
-    position: sticky;
-    
+    position: sticky;  
 }
 
 .titlenav{
@@ -291,7 +291,6 @@
   }
 
   .f2:hover {
-    background-color: #00ff08;
     color: white;
     transform: scale(1.2);
   }
